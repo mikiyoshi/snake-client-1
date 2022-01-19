@@ -9,8 +9,31 @@ const connect = function () {
 
   conn.on('connect', () => {
     // code that does something when the connection is first established
-    // console.log(`message: Kokura`);
+    // console.log(`message: Kokura`); this message at terminal
+    // setInterval(event, 4000); is endless, setTimeout(event, 1000) one time
     conn.write('Name: K9R');
+    let event = () => {
+      // setTimeout(() => {
+      conn.write('Move: up');
+      // conn.write('Move: down');
+      // conn.write('Move: down');
+      // conn.write('Move: right');
+      // conn.write('Move: right');
+      // }, 1000);
+    };
+    setInterval(event, 4000);
+    // setTimeout(() => {
+    //   conn.write('Move: left');
+    //   conn.write('Move: left');
+    // }, 2000);
+    // setTimeout(() => {
+    //   conn.write('Move: down');
+    //   conn.write('Move: down');
+    // }, 3000);
+    // setTimeout(() => {
+    //   conn.write('Move: right');
+    //   conn.write('Move: right');
+    // }, 4000);
   });
   return conn;
 };
