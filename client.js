@@ -12,15 +12,15 @@ const connect = function () {
     // console.log(`message: Kokura`); this message at terminal
     // setInterval(event, 4000); is endless, setTimeout(event, 1000) one time
     conn.write('Name: K9R');
-    let event = () => {
-      // setTimeout(() => {
-      conn.write('Move: up');
-      // conn.write('Move: down');
-      // conn.write('Move: down');
-      // conn.write('Move: right');
-      // conn.write('Move: right');
-      // }, 1000);
-    };
+    // let event = () => {
+    // setTimeout(() => {
+    // conn.write('Move: up');
+    // conn.write('Move: down');
+    // conn.write('Move: down');
+    // conn.write('Move: right');
+    // conn.write('Move: right');
+    // }, 1000);
+    // };
     // setInterval(event, 4000);
     // setTimeout(() => {
     //   conn.write('Move: left');
