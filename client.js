@@ -9,7 +9,8 @@ const connect = function () {
 
   conn.on('connect', () => {
     // code that does something when the connection is first established
-    console.log(`message: Kokura`);
+    // console.log(`message: Kokura`);
+    conn.write('Name: K9R');
   });
   return conn;
 };
