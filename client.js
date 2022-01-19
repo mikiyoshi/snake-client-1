@@ -21,7 +21,7 @@ const connect = function () {
       // conn.write('Move: right');
       // }, 1000);
     };
-    setInterval(event, 4000);
+    // setInterval(event, 4000);
     // setTimeout(() => {
     //   conn.write('Move: left');
     //   conn.write('Move: left');
